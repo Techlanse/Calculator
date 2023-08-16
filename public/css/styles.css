@@ -1,0 +1,81 @@
+.flex-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        
+     }
+     .title{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   height: 125px;
+
+    }
+     h1{
+        
+        font-size: 3rem;
+        position: absolute;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     }
+     .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     .grid-container{
+        display: grid;
+        width: 300px;
+        height: 500px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 100px repeat(5,80px);
+        gap: 3px;
+        
+     }  
+    .output{
+        grid-column: span 4;
+        background-color: black;
+    }
+    #output{
+        text-align: right;
+        width: 290px;
+        height: 93px;
+        font-size: 3rem;
+    }
+    .ac{
+        grid-column: span 2;          
+    }
+    .equals{
+        grid-column: span 2;
+    }
+    .fl{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    button{
+        opacity: 0.4;
+        font-size: 2rem;
+        font-weight: bolder;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .digit,.ac{
+        background-color: #CDC2AE;
+    }
+    .operator,.equals{
+        background-color: #116A7B;
+    }
+    .aceq{
+     width: 140px;
+     height: 75px;
+    }
+    
+    .digit>button{
+        width:67px;
+        height: 75px;
+    }
+    .arith{
+        width:67px;
+        height: 75px;
+    }

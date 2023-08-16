@@ -4,155 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Standard Calculator</title>
-    <style>
-        body{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        .grid-container{
-            position: absolute;
-            left: 40%;
-            top: 18%;
-            display: grid;
-            width: 300px;
-            height: 500px;
-            grid-template-columns:1fr 1fr 1fr 1fr;
-            grid-template-rows: 100px repeat(5,80px);
-            gap: 3px;
-        }
-        .item{
-            background-color:#CDC2AE;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-.output{
-    grid-column: span 4;
-    background-color: black;
-    color: white;
-}
-.ac{
-    grid-column: span 2;
-}
-.equals{
-    grid-column: span 2;
-}
-.operator{
-    background-color:#116A7B;
-}
-
-.opArea{
-    position: absolute;
-    text-align: right;
-    width: 96%;
-    height: 18%;
-    font-size:3rem;
-}
-.cleareq{
-    position: absolute;
-    width: 47%;
-    height: 15%;
-    opacity: 0.4;
-    
-}
-.digit{
-    position: absolute;
-    width: 22%;
-    height: 15%;
-    opacity: 0.4;
-    
-}
-
-.btnfont{
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.grid-header{
-    display: grid;
-    grid-template-columns: 12fr;
-    grid-template-rows: 80px;
-}
-.title{
-   
-    text-align: center;
-    font-size: 2.5rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: underline;
-}
-
-
-
-    </style>
+   <link rel="stylesheet" href="./public/css/styles.css">
 </head>
 <body>
-    <div class="content">
-        <div class="grid-header">
-        <h1 class="title">Standard Calculator</h1>
-    </div>
-    
-    <div class="grid-container">
-        
-      <div class="item output">
-        <input type="text" id="op" class="opArea">
-      </div>
-      <div class="item ac">
-        <button class="cleareq btnfont">ac</button>
-      </div>
-      <div class="item">
-        <button class="digit btnfont">del</button>
-      </div>
-      <div class="item operator">
-         <button class="digit btnfont">÷</button>
-      </div>
-      <div class="item">
-         <button class="digit btnfont">1</button>
-      </div>
-      <div class="item">
-         <button class="digit btnfont">2</button>
-      </div>
-      <div class="item">
-         <button class="digit btnfont">3</button>
-      </div>
-      <div class="item operator">
-         <button class="digit btnfont">*</button>
-      </div>
-      <div class="item">
-         <button class="digit btnfont">4</button>
-      </div>
-      <div class="item">
-         <button class="digit btnfont">5</button>
-      </div>
-      <div class="item">
-         <button class="digit btnfont">6</button>
-      </div>
-      <div class="item operator">
-         <button class="digit btnfont">+</button>
-      </div>
-      <div class="item">
-         <button class="digit btnfont">7</button>
-      </div>
-      <div class="item">
-         <button class="digit btnfont">8</button>
-      </div>
-      <div class="item">
-         <button class="digit btnfont">9</button>
-      </div>
-      <div class="item operator">
-         <button class="digit btnfont">-</button>
-      </div>
-      <div class="item">
-         <button class="digit btnfont">.</button>
-      </div>
-      <div class="item">
-         <button class="digit btnfont">0</button>
-      </div>
-      <div class="item equals">
-        <button class="cleareq btnfont">=</button>
-      </div>
-    </div>
+    <div class="flex-container">
+        <div class="title">
+            <h1>Standard Calculator</h1>
+        </div>
+        <div class="content">
+            <div class="grid-container">
+              
+              <div class="fl output"><input type="text" name="" id="output"></div>
+              <div class="fl ac">
+                <button class="aceq">ac</button>
+              </div>
+              <div class="fl digit">
+                <button>del</button>
+              </div>
+              <div class="fl operator">
+                <button class="arith">÷</button>
+              </div>
+              <div class="fl digit">
+                <button>1</button>
+              </div>
+              <div class="fl digit">
+                <button>2</button>
+              </div>
+              <div class="fl digit">
+                <button>3</button>
+              </div>
+              <div class="fl operator">
+                <button class="arith">*</button>
+              </div>
+              <div class="fl digit">
+                <button>4</button>
+              </div>
+              <div class="fl digit">
+                <button>5</button>
+              </div>
+              <div class="fl digit">
+                <button>6</button>
+              </div>
+              <div class="fl operator">
+                <button class="arith">+</button>
+              </div>
+              <div class="fl digit">
+                <button>7</button>
+              </div>
+              <div class="fl digit">
+                <button>8</button>
+              </div>
+              <div class="fl digit">
+                <button>9</button>
+              </div>
+              <div class="fl operator">
+                <button class="arith">-</button>
+              </div>
+              <div class="fl digit">
+                <button>.</button>
+              </div>
+              <div class="fl digit">
+                <button>0</button>
+              </div>
+              <div class="fl equals">
+                <button class="aceq">=</button>
+              </div>
+              
+            </div>
+        </div>
     </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
